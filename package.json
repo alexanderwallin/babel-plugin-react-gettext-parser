@@ -7,6 +7,7 @@
   "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
   "license": "ISC",
   "dependencies": {
-    "deep-extend": "^0.4.1"
+    "deep-extend": "^0.4.1",
+    "react-gettext-parser": "^1.1.0"
   }
 }
