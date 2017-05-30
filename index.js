@@ -1,7 +1,6 @@
 
 var fs = require('fs');
 var path = require('path');
-var deepExtend = require('deep-extend');
 var reactGettextParser = require('react-gettext-parser');
 
 module.exports = function(babel) {
