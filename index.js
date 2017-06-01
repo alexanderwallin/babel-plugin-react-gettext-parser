@@ -7,10 +7,14 @@ module.exports = function(babel) {
   var allMessages = [];
 
   var traverser = reactGettextParser.getTraverser(function(messages, state) {
-    console.log('got messages', messages);
+    if (state.opts.verbose) {
+      console.log('got messages', messages);
+    }
+
     allMessages = reactGettextParser.getUniqueBlocks(allMessages.concat(messages));
 
     reactGettextParser.outputPot(
+      state.opts.verbose,
       state.opts.target || state.opts.output,
       reactGettextParser.toPot(allMessages)
     );
