@@ -4,7 +4,6 @@ var path = require('path');
 var reactGettextParser = require('react-gettext-parser');
 
 module.exports = function(babel) {
-  //console.log(babel);
   var allMessages = [];
 
   var traverser = reactGettextParser.getTraverser(function(messages, state) {
