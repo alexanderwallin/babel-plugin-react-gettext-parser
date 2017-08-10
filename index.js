@@ -13,7 +13,6 @@ module.exports = function(babel) {
     allMessages = reactGettextParser.getUniqueBlocks(allMessages.concat(messages));
 
     reactGettextParser.outputPot(
-      state.opts.verbose,
       state.opts.target || state.opts.output,
       reactGettextParser.toPot(allMessages)
     );
