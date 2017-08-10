@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-gettext-parser",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Babel plugin for react-gettext-parser",
   "main": "index.js",
   "scripts": {},
